@@ -4,11 +4,5 @@
     "com.webos.service.eventmonitor/mockPlugin/getEvents",
     "com.webos.service.eventmonitor/network/starfish/enableWifiDirectNotifications",
     "com.webos.service.eventmonitor/network/starfish/alertClose"
-  ],
-  "private": [
-    "com.webos.service.eventmonitor/mockPlugin/action",
-    "com.webos.service.eventmonitor/mockPlugin/getEvents",
-    "com.webos.service.eventmonitor/network/starfish/enableWifiDirectNotifications",
-    "com.webos.service.eventmonitor/network/starfish/alertClose"
   ]
 }
