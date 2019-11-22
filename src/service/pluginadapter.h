@@ -1,4 +1,4 @@
-// Copyright (c) 2015-2018 LG Electronics, Inc.
+// Copyright (c) 2015-2019 LG Electronics, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -49,6 +49,8 @@ class PluginAdapter: public Manager
 public:
 	PluginAdapter(PluginManager *manager, const PluginInfo *info);
 	virtual ~PluginAdapter();
+        PluginAdapter(const PluginAdapter&) = delete;
+        PluginAdapter& operator=(const PluginAdapter&) = delete;
 
 	// Manager methods - called from plugin
 	void setupLogging(PmLogContext *context);
