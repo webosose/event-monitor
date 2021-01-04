@@ -1,4 +1,4 @@
-// Copyright (c) 2015-2018 LG Electronics, Inc.
+// Copyright (c) 2015-2021 LG Electronics, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ PluginLoader::PluginLoader(const std::string &_pluginPath):
 		LOG_ERROR(MSGID_PLUGIN_LOADER, 0,
 		          "Failed to open plugin directory: %s, error: %s", this->pluginPath.c_str(),
 		          error->message);
+		g_error_free(error);
 		return; // No plugins
 	}
 
