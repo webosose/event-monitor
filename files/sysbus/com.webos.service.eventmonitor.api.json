@@ -1,5 +1,5 @@
 {
-  "eventmonitor.plugins": [
+  "eventmonitor.plugin": [
     "com.webos.service.eventmonitor/mockPlugin/action",
     "com.webos.service.eventmonitor/mockPlugin/getEvents",
     "com.webos.service.eventmonitor/network/starfish/enableWifiDirectNotifications",
