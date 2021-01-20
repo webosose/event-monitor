@@ -4,8 +4,6 @@
     "notification.management",
     "notification.operation",
     "settings.query",
-    "networking.query",
-    "nfc.query",
-    "networking.internal"
+    "networkconnection.query"
   ]
 }
