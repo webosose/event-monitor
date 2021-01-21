@@ -5,10 +5,7 @@
     "notification.operation",
     "settings.query",
     "networking.query",
-    "devices",
     "nfc.query",
-    "services",
-    "networking.internal",
-    "tv.management"
+    "networking.internal"
   ]
 }
