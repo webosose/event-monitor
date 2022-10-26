@@ -1,4 +1,4 @@
-// Copyright (c) 2015-2018 LG Electronics, Inc.
+// Copyright (c) 2015-2022 LG Electronics, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -73,7 +73,7 @@ void ServiceMonitor::localeCallback(pbnjson::JValue &previousValue,
 
 	if (!this->monitorStarted)
 	{
-		for (auto iter : *this->plugins)
+		for (const auto& iter : *this->plugins)
 		{
 			this->addPlugin(iter);
 		}
