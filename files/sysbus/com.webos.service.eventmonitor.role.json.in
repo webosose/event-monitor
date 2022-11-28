@@ -19,7 +19,8 @@
                 "com.palm.display",
                 "com.lge.settingmanager",
                 "com.webos.service.wifi",
-                "com.webos.service.tvpower"
+                "com.webos.service.tvpower",
+                "com.webos.service.pdm"
             ]
         }
     ]

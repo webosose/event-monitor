@@ -4,6 +4,7 @@
     "notification.management",
     "notification.operation",
     "settings.query",
-    "networkconnection.query"
+    "networkconnection.query",
+    "physicaldevice.query"
   ]
 }
