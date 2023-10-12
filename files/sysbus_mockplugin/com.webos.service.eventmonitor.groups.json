@@ -1,0 +1,4 @@
+{
+    "allowedNames" : ["com.webos.service.eventmonitor"],
+    "eventmonitor.plugin" : ["oem"]
+}

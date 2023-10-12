@@ -1,4 +1,4 @@
-# Copyright (c) 2015-2018 LG Electronics, Inc.
+# Copyright (c) 2015-2023 LG Electronics, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -75,7 +75,13 @@ webos_add_compiler_flags(ALL -I${CMAKE_CURRENT_BINARY_DIR}/Configured/src)
 add_executable(event-monitor ${SOURCES})
 target_link_libraries(event-monitor ${LIBS})
 webos_build_daemon()
-webos_build_system_bus_files()
+
+message("BUILD_MOCK_PLUGIN is ${BUILD_MOCK_PLUGIN}")
+if(${BUILD_MOCK_PLUGIN} MATCHES YES)
+    webos_build_system_bus_files(files/sysbus_mockplugin)
+else()
+    webos_build_system_bus_files()
+endif()
 
 ######## Headers for plugins ########
 

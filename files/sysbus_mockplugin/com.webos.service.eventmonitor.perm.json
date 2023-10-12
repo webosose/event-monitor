@@ -1,0 +1,10 @@
+{
+  "com.webos.service.eventmonitor": [
+    "application.operation",
+    "notification.management",
+    "notification.operation",
+    "settings.query",
+    "networkconnection.query",
+    "physicaldevice.query"
+  ]
+}

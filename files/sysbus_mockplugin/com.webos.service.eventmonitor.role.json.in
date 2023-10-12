@@ -1,0 +1,27 @@
+{
+    "exeName":"@WEBOS_INSTALL_SBINDIR@/event-monitor",
+    "type": "regular",
+    "allowedNames": ["com.webos.service.eventmonitor"],
+    "permissions": [
+        {
+            "service":"com.webos.service.eventmonitor",
+            "outbound":[
+                "com.webos.service.eventmonitor",
+                "com.webos.settingsservice",
+                "com.webos.service.bus",
+                "com.webos.notification",
+                "com.webos.applicationManager",
+                "com.webos.service.connectionmanager",
+                "com.webos.service.bluetooth2",
+                "com.webos.service.nfc",
+                "com.lge.service.systemui",
+                "com.webos.service.battery",
+                "com.palm.display",
+                "com.lge.settingmanager",
+                "com.webos.service.wifi",
+                "com.webos.service.tvpower",
+                "com.webos.service.pdm"
+            ]
+        }
+    ]
+}
