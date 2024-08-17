@@ -1,4 +1,4 @@
-// Copyright (c) 2015-2018 LG Electronics, Inc.
+// Copyright (c) 2015-2024 LG Electronics, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -45,7 +45,7 @@ bool PluginInfo::containsURI(const std::string &uri) const
 
 	std::string serviceName = parts[2];
 
-	for (auto s : this->requiredServices)
+	for (const auto& s : this->requiredServices)
 	{
 		if (s == serviceName)
 		{

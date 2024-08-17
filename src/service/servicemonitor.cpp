@@ -1,4 +1,4 @@
-// Copyright (c) 2015-2022 LG Electronics, Inc.
+// Copyright (c) 2015-2024 LG Electronics, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -86,7 +86,7 @@ void ServiceMonitor::addPlugin(const PluginInfo &info)
 {
 	LOG_INFO(MSGID_SERVICE_STATUS, 0, "Adding plugin from %s", info.path.c_str());
 
-	for (auto service : info.requiredServices)
+	for (const auto& service : info.requiredServices)
 	{
 		if (this->serviceStatus.count(service) > 0)
 		{

@@ -1,4 +1,4 @@
-// Copyright (c) 2015-2018 LG Electronics, Inc.
+// Copyright (c) 2015-2024 LG Electronics, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -481,7 +481,7 @@ void PluginAdapter::createAlert(const std::string &alertId,
 		throw Error("Failed to create alert");
 	}
 
-	this->alerts[alertId] = internalId;
+	this->alerts[alertId] = std::move(internalId);
 }
 
 bool PluginAdapter::closeAlert(const std::string &alertId)

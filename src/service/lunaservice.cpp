@@ -1,4 +1,4 @@
-// Copyright (c) 2015-2018 LG Electronics, Inc.
+// Copyright (c) 2015-2024 LG Electronics, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -46,7 +46,7 @@ LunaService::~LunaService()
 	// Cleanup the methods
 	for (auto cat : this->categoryMethods)
 	{
-		for(auto method: cat.second)
+		for(const auto& method: cat.second)
 		{
 			delete method.second;
 		}
@@ -376,7 +376,7 @@ void LunaService::cleanupPlugin(PluginAdapter *plugin)
 	// handler will return a generic error - method removed.
 	for (auto cat : this->categoryMethods)
 	{
-		for (auto methodIter: cat.second)
+		for (const auto& methodIter: cat.second)
 		{
 			if (methodIter.second->plugin == plugin)
 			{
