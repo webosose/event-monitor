@@ -1,6 +1,3 @@
 {
-  "eventmonitor.plugin": [
-    "com.webos.service.eventmonitor/network/starfish/enableWifiDirectNotifications",
-    "com.webos.service.eventmonitor/network/starfish/alertClose"
-  ]
+  "eventmonitor.plugin": [ ]
 }
